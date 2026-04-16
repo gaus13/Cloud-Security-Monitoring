@@ -1,0 +1,207 @@
+2026-04-15T11:27:09.847758+00:00 ip-172-31-24-215 useradd[563]: new group: name=ubuntu, GID=1000
+2026-04-15T11:27:09.847764+00:00 ip-172-31-24-215 useradd[563]: new user: name=ubuntu, UID=1000, GID=1000, home=/home/ubuntu, shell=/bin/bash, from=none
+2026-04-15T11:27:09.847770+00:00 ip-172-31-24-215 useradd[563]: add 'ubuntu' to group 'adm'
+2026-04-15T11:27:09.847774+00:00 ip-172-31-24-215 useradd[563]: add 'ubuntu' to group 'cdrom'
+2026-04-15T11:27:09.847779+00:00 ip-172-31-24-215 useradd[563]: add 'ubuntu' to group 'sudo'
+2026-04-15T11:27:09.847785+00:00 ip-172-31-24-215 useradd[563]: add 'ubuntu' to group 'dip'
+2026-04-15T11:27:09.847790+00:00 ip-172-31-24-215 useradd[563]: add 'ubuntu' to group 'lxd'
+2026-04-15T11:27:09.847795+00:00 ip-172-31-24-215 useradd[563]: add 'ubuntu' to shadow group 'adm'
+2026-04-15T11:27:09.847804+00:00 ip-172-31-24-215 useradd[563]: add 'ubuntu' to shadow group 'cdrom'
+2026-04-15T11:27:09.847808+00:00 ip-172-31-24-215 useradd[563]: add 'ubuntu' to shadow group 'sudo'
+2026-04-15T11:27:09.847814+00:00 ip-172-31-24-215 useradd[563]: add 'ubuntu' to shadow group 'dip'
+2026-04-15T11:27:09.847819+00:00 ip-172-31-24-215 useradd[563]: add 'ubuntu' to shadow group 'lxd'
+2026-04-15T11:27:09.847826+00:00 ip-172-31-24-215 passwd[571]: password for 'ubuntu' changed by 'root'
+2026-04-15T11:27:09.851935+00:00 ip-172-31-24-215 systemd-logind[614]: New seat seat0.
+2026-04-15T11:27:09.851940+00:00 ip-172-31-24-215 systemd-logind[614]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-04-15T11:27:09.851945+00:00 ip-172-31-24-215 systemd-logind[614]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-04-15T11:27:09.851950+00:00 ip-172-31-24-215 systemd-logind[614]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-04-15T11:27:09.852060+00:00 ip-172-31-24-215 polkitd[601]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-15T11:27:09.852070+00:00 ip-172-31-24-215 polkitd[601]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-15T11:27:09.852075+00:00 ip-172-31-24-215 polkitd[601]: Finished loading, compiling and executing 6 rules
+2026-04-15T11:27:09.852084+00:00 ip-172-31-24-215 polkitd[601]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-04-15T11:35:01.525234+00:00 ip-172-31-24-215 CRON[1028]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-15T11:35:01.530937+00:00 ip-172-31-24-215 CRON[1028]: pam_unix(cron:session): session closed for user root
+2026-04-15T11:40:25.243976+00:00 ip-172-31-24-215 sshd[1038]: Server listening on 0.0.0.0 port 22.
+2026-04-15T11:40:25.244144+00:00 ip-172-31-24-215 sshd[1038]: Server listening on :: port 22.
+2026-04-15T11:40:34.808748+00:00 ip-172-31-24-215 sshd[1039]: Accepted publickey for ubuntu from 152.58.116.109 port 65256 ssh2: RSA SHA256:d3g8ECO+Qnmk2bsXCVFaUELSInNh7MmrzD7xlm6FPBI
+2026-04-15T11:40:34.810424+00:00 ip-172-31-24-215 sshd[1039]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-04-15T11:40:34.836960+00:00 ip-172-31-24-215 systemd-logind[614]: New session 2 of user ubuntu.
+2026-04-15T11:40:34.859442+00:00 ip-172-31-24-215 (systemd): pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-04-15T11:45:01.537680+00:00 ip-172-31-24-215 CRON[1202]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-15T11:45:01.543021+00:00 ip-172-31-24-215 CRON[1202]: pam_unix(cron:session): session closed for user root
+2026-04-15T11:45:42.028145+00:00 ip-172-31-24-215 sshd[1039]: pam_unix(sshd:session): session closed for user ubuntu
+2026-04-15T11:45:42.032363+00:00 ip-172-31-24-215 systemd-logind[614]: Session 2 logged out. Waiting for processes to exit.
+2026-04-15T11:45:42.033247+00:00 ip-172-31-24-215 systemd-logind[614]: Removed session 2.
+2026-04-15T11:51:09.033793+00:00 ip-172-31-24-215 sshd[1224]: Accepted publickey for ubuntu from 152.58.116.109 port 65208 ssh2: RSA SHA256:d3g8ECO+Qnmk2bsXCVFaUELSInNh7MmrzD7xlm6FPBI
+2026-04-15T11:51:09.035612+00:00 ip-172-31-24-215 sshd[1224]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-04-15T11:51:09.055268+00:00 ip-172-31-24-215 systemd-logind[614]: New session 5 of user ubuntu.
+2026-04-15T11:51:09.073018+00:00 ip-172-31-24-215 (systemd): pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-04-15T11:52:38.596355+00:00 ip-172-31-24-215 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt update
+2026-04-15T11:52:38.597432+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-04-15T11:52:57.671353+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session closed for user root
+2026-04-15T11:53:17.064340+00:00 ip-172-31-24-215 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install nginx -y
+2026-04-15T11:53:17.065248+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-04-15T11:53:28.010284+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session closed for user root
+2026-04-15T11:54:11.285328+00:00 ip-172-31-24-215 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl start nginx
+2026-04-15T11:54:11.286223+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-04-15T11:54:11.295914+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session closed for user root
+2026-04-15T11:55:01.549789+00:00 ip-172-31-24-215 CRON[1923]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-15T11:55:01.568280+00:00 ip-172-31-24-215 CRON[1923]: pam_unix(cron:session): session closed for user root
+2026-04-15T11:55:24.049624+00:00 ip-172-31-24-215 sshd[1926]: Invalid user wronguser from 152.58.116.109 port 65216
+2026-04-15T11:55:24.688045+00:00 ip-172-31-24-215 sshd[1926]: Connection closed by invalid user wronguser 152.58.116.109 port 65216 [preauth]
+2026-04-15T11:55:26.450246+00:00 ip-172-31-24-215 sshd[1928]: Invalid user wronguser from 152.58.116.109 port 65228
+2026-04-15T11:55:27.088482+00:00 ip-172-31-24-215 sshd[1928]: Connection closed by invalid user wronguser 152.58.116.109 port 65228 [preauth]
+2026-04-15T11:55:29.012593+00:00 ip-172-31-24-215 sshd[1930]: Invalid user wronguser from 152.58.116.109 port 65236
+2026-04-15T11:55:29.595407+00:00 ip-172-31-24-215 sshd[1930]: Connection closed by invalid user wronguser 152.58.116.109 port 65236 [preauth]
+2026-04-15T11:55:31.411403+00:00 ip-172-31-24-215 sshd[1932]: Invalid user wronguser from 152.58.116.109 port 65240
+2026-04-15T11:55:32.014816+00:00 ip-172-31-24-215 sshd[1932]: Connection closed by invalid user wronguser 152.58.116.109 port 65240 [preauth]
+2026-04-15T11:55:33.970779+00:00 ip-172-31-24-215 sshd[1934]: Invalid user wronguser from 152.58.116.109 port 65252
+2026-04-15T11:55:34.609104+00:00 ip-172-31-24-215 sshd[1934]: Connection closed by invalid user wronguser 152.58.116.109 port 65252 [preauth]
+2026-04-15T11:55:36.531087+00:00 ip-172-31-24-215 sshd[1936]: Invalid user wronguser from 152.58.116.109 port 65202
+2026-04-15T11:55:37.170009+00:00 ip-172-31-24-215 sshd[1936]: Connection closed by invalid user wronguser 152.58.116.109 port 65202 [preauth]
+2026-04-15T11:55:58.382110+00:00 ip-172-31-24-215 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-04-15T11:55:58.384909+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-04-15T11:55:58.385923+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session closed for user root
+2026-04-15T11:57:09.006966+00:00 ip-172-31-24-215 sshd[1944]: Invalid user fakeuser from 152.58.116.109 port 65206
+2026-04-15T11:57:09.640764+00:00 ip-172-31-24-215 sshd[1944]: Connection closed by invalid user fakeuser 152.58.116.109 port 65206 [preauth]
+2026-04-15T11:57:19.578183+00:00 ip-172-31-24-215 sshd[1947]: Invalid user fakeuser from 152.58.116.109 port 65254
+2026-04-15T11:57:20.216442+00:00 ip-172-31-24-215 sshd[1947]: Connection closed by invalid user fakeuser 152.58.116.109 port 65254 [preauth]
+2026-04-15T11:57:29.172666+00:00 ip-172-31-24-215 sshd[1949]: Invalid user fakeusernew from 152.58.116.109 port 65234
+2026-04-15T11:57:29.696149+00:00 ip-172-31-24-215 sshd[1949]: Connection closed by invalid user fakeusernew 152.58.116.109 port 65234 [preauth]
+2026-04-15T11:57:40.962475+00:00 ip-172-31-24-215 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-04-15T11:57:40.963529+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-04-15T11:57:40.965645+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session closed for user root
+2026-04-15T11:59:20.636120+00:00 ip-172-31-24-215 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-04-15T11:59:20.636608+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-04-15T11:59:20.638920+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session closed for user root
+2026-04-15T12:01:41.885449+00:00 ip-172-31-24-215 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/tail -50 /var/log/auth.log
+2026-04-15T12:01:41.888918+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2026-04-15T12:01:41.890535+00:00 ip-172-31-24-215 sudo: pam_unix(sudo:session): session closed for user root
+2026-04-15T12:05:01.576210+00:00 ip-172-31-24-215 CRON[1968]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-15T12:05:01.584117+00:00 ip-172-31-24-215 CRON[1968]: pam_unix(cron:session): session closed for user root
+2026-04-15T12:06:44.474725+00:00 ip-172-31-24-215 sshd[1224]: pam_unix(sshd:session): session closed for user ubuntu
+2026-04-15T12:06:44.480017+00:00 ip-172-31-24-215 systemd-logind[614]: Session 5 logged out. Waiting for processes to exit.
+2026-04-15T12:06:44.480886+00:00 ip-172-31-24-215 systemd-logind[614]: Removed session 5.
+2026-04-15T12:10:19.259511+00:00 ip-172-31-24-215 sshd[1985]: Connection closed by 54.89.202.86 port 45426 [preauth]
+2026-04-15T12:15:01.589792+00:00 ip-172-31-24-215 CRON[1991]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-15T12:15:01.596579+00:00 ip-172-31-24-215 CRON[1991]: pam_unix(cron:session): session closed for user root
+2026-04-15T12:17:01.600412+00:00 ip-172-31-24-215 CRON[1994]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-15T12:17:01.606004+00:00 ip-172-31-24-215 CRON[1994]: pam_unix(cron:session): session closed for user root
+2026-04-15T12:25:01.613224+00:00 ip-172-31-24-215 CRON[2003]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-15T12:25:01.619074+00:00 ip-172-31-24-215 CRON[2003]: pam_unix(cron:session): session closed for user root
+2026-04-15T12:27:30.012802+00:00 ip-172-31-24-215 systemd-logind[614]: Power key pressed short.
+2026-04-15T12:27:30.018792+00:00 ip-172-31-24-215 systemd-logind[614]: The system will power off now!
+2026-04-15T12:27:30.048233+00:00 ip-172-31-24-215 systemd-logind[614]: System is powering down.
+2026-04-16T09:07:34.737356+00:00 ip-172-31-24-215 systemd-logind[539]: New seat seat0.
+2026-04-16T09:07:34.737584+00:00 ip-172-31-24-215 systemd-logind[539]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-04-16T09:07:34.737591+00:00 ip-172-31-24-215 systemd-logind[539]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-04-16T09:07:34.737598+00:00 ip-172-31-24-215 systemd-logind[539]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-04-16T09:07:34.737699+00:00 ip-172-31-24-215 polkitd[521]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-16T09:07:34.737704+00:00 ip-172-31-24-215 polkitd[521]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-16T09:07:34.737713+00:00 ip-172-31-24-215 polkitd[521]: Finished loading, compiling and executing 6 rules
+2026-04-16T09:07:34.737725+00:00 ip-172-31-24-215 polkitd[521]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-04-16T09:15:01.569889+00:00 ip-172-31-24-215 CRON[1231]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T09:15:01.578242+00:00 ip-172-31-24-215 CRON[1231]: pam_unix(cron:session): session closed for user root
+2026-04-16T09:17:01.617684+00:00 ip-172-31-24-215 CRON[1234]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T09:17:01.624942+00:00 ip-172-31-24-215 CRON[1234]: pam_unix(cron:session): session closed for user root
+2026-04-16T09:25:01.630754+00:00 ip-172-31-24-215 CRON[1246]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T09:25:01.639106+00:00 ip-172-31-24-215 CRON[1246]: pam_unix(cron:session): session closed for user root
+2026-04-16T09:30:28.826192+00:00 ip-172-31-24-215 sshd[1255]: Server listening on 0.0.0.0 port 22.
+2026-04-16T09:30:28.826412+00:00 ip-172-31-24-215 sshd[1255]: Server listening on :: port 22.
+2026-04-16T09:30:28.836775+00:00 ip-172-31-24-215 sshd[1257]: banner exchange: Connection from 164.92.71.191 port 59932: invalid format
+2026-04-16T09:30:28.977409+00:00 ip-172-31-24-215 sshd[1258]: banner exchange: Connection from 164.92.71.191 port 59946: invalid format
+2026-04-16T09:35:01.652117+00:00 ip-172-31-24-215 CRON[1259]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T09:35:01.664880+00:00 ip-172-31-24-215 CRON[1259]: pam_unix(cron:session): session closed for user root
+2026-04-16T09:45:01.689064+00:00 ip-172-31-24-215 CRON[1269]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T09:45:01.692788+00:00 ip-172-31-24-215 CRON[1269]: pam_unix(cron:session): session closed for user root
+2026-04-16T09:54:38.397047+00:00 ip-172-31-24-215 sshd[1379]: Accepted publickey for ubuntu from 157.49.7.82 port 44798 ssh2: RSA SHA256:d3g8ECO+Qnmk2bsXCVFaUELSInNh7MmrzD7xlm6FPBI
+2026-04-16T09:54:38.398966+00:00 ip-172-31-24-215 sshd[1379]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-04-16T09:54:38.425403+00:00 ip-172-31-24-215 systemd-logind[539]: New session 6 of user ubuntu.
+2026-04-16T09:54:38.444601+00:00 ip-172-31-24-215 (systemd): pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-04-16T09:54:43.743628+00:00 ip-172-31-24-215 sshd[1495]: Received disconnect from 157.49.7.82 port 44798:11: disconnected by user
+2026-04-16T09:54:43.743866+00:00 ip-172-31-24-215 sshd[1495]: Disconnected from user ubuntu 157.49.7.82 port 44798
+2026-04-16T09:54:43.744276+00:00 ip-172-31-24-215 sshd[1379]: pam_unix(sshd:session): session closed for user ubuntu
+2026-04-16T09:54:43.750039+00:00 ip-172-31-24-215 systemd-logind[539]: Session 6 logged out. Waiting for processes to exit.
+2026-04-16T09:54:43.751416+00:00 ip-172-31-24-215 systemd-logind[539]: Removed session 6.
+2026-04-16T09:54:47.417318+00:00 ip-172-31-24-215 polkitd[521]: Reloading rules
+2026-04-16T09:54:47.418590+00:00 ip-172-31-24-215 polkitd[521]: Collecting garbage unconditionally...
+2026-04-16T09:54:47.418644+00:00 ip-172-31-24-215 polkitd[521]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-16T09:54:47.420442+00:00 ip-172-31-24-215 polkitd[521]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-16T09:54:47.427547+00:00 ip-172-31-24-215 polkitd[521]: Finished loading, compiling and executing 6 rules
+2026-04-16T09:54:47.428857+00:00 ip-172-31-24-215 polkitd[521]: Reloading rules
+2026-04-16T09:54:47.428923+00:00 ip-172-31-24-215 polkitd[521]: Collecting garbage unconditionally...
+2026-04-16T09:54:47.428968+00:00 ip-172-31-24-215 polkitd[521]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-16T09:54:47.429017+00:00 ip-172-31-24-215 polkitd[521]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-16T09:54:47.429059+00:00 ip-172-31-24-215 polkitd[521]: Finished loading, compiling and executing 6 rules
+2026-04-16T09:54:54.011322+00:00 ip-172-31-24-215 (sd-pam): pam_unix(systemd-user:session): session closed for user ubuntu
+2026-04-16T09:55:01.209823+00:00 ip-172-31-24-215 polkitd[5801]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-16T09:55:01.213717+00:00 ip-172-31-24-215 polkitd[5801]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-16T09:55:01.238120+00:00 ip-172-31-24-215 polkitd[5801]: Finished loading, compiling and executing 6 rules
+2026-04-16T09:55:01.240330+00:00 ip-172-31-24-215 polkitd[5801]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-04-16T09:55:01.717604+00:00 ip-172-31-24-215 CRON[5867]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T09:55:01.721307+00:00 ip-172-31-24-215 CRON[5867]: pam_unix(cron:session): session closed for user root
+2026-04-16T09:55:17.757917+00:00 ip-172-31-24-215 sshd[1255]: Received signal 15; terminating.
+2026-04-16T09:55:17.969285+00:00 ip-172-31-24-215 sshd[6353]: Server listening on 0.0.0.0 port 22.
+2026-04-16T09:55:17.971024+00:00 ip-172-31-24-215 sshd[6353]: Server listening on :: port 22.
+2026-04-16T09:55:55.688489+00:00 ip-172-31-24-215 polkitd[5801]: Reloading rules
+2026-04-16T09:55:55.688632+00:00 ip-172-31-24-215 polkitd[5801]: Collecting garbage unconditionally...
+2026-04-16T09:55:55.688720+00:00 ip-172-31-24-215 polkitd[5801]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-16T09:55:55.688953+00:00 ip-172-31-24-215 polkitd[5801]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-16T09:55:55.696910+00:00 ip-172-31-24-215 polkitd[5801]: Finished loading, compiling and executing 6 rules
+2026-04-16T09:55:55.697065+00:00 ip-172-31-24-215 polkitd[5801]: Reloading rules
+2026-04-16T09:55:55.697488+00:00 ip-172-31-24-215 polkitd[5801]: Collecting garbage unconditionally...
+2026-04-16T09:55:55.697597+00:00 ip-172-31-24-215 polkitd[5801]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-16T09:55:55.697643+00:00 ip-172-31-24-215 polkitd[5801]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-16T09:55:55.699070+00:00 ip-172-31-24-215 polkitd[5801]: Finished loading, compiling and executing 6 rules
+2026-04-16T09:55:55.699178+00:00 ip-172-31-24-215 polkitd[5801]: Reloading rules
+2026-04-16T09:55:55.699262+00:00 ip-172-31-24-215 polkitd[5801]: Collecting garbage unconditionally...
+2026-04-16T09:55:55.699341+00:00 ip-172-31-24-215 polkitd[5801]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-16T09:55:55.699461+00:00 ip-172-31-24-215 polkitd[5801]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-16T09:55:55.700473+00:00 ip-172-31-24-215 polkitd[5801]: Finished loading, compiling and executing 6 rules
+2026-04-16T09:55:55.700539+00:00 ip-172-31-24-215 polkitd[5801]: Reloading rules
+2026-04-16T09:55:55.700587+00:00 ip-172-31-24-215 polkitd[5801]: Collecting garbage unconditionally...
+2026-04-16T09:55:55.700630+00:00 ip-172-31-24-215 polkitd[5801]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-16T09:55:55.700673+00:00 ip-172-31-24-215 polkitd[5801]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-16T09:55:55.701676+00:00 ip-172-31-24-215 polkitd[5801]: Finished loading, compiling and executing 6 rules
+2026-04-16T09:55:56.642146+00:00 ip-172-31-24-215 polkitd[11585]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-16T09:55:56.642304+00:00 ip-172-31-24-215 polkitd[11585]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-16T09:55:56.643099+00:00 ip-172-31-24-215 polkitd[11585]: Finished loading, compiling and executing 6 rules
+2026-04-16T09:55:56.646328+00:00 ip-172-31-24-215 polkitd[11585]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-04-16T10:05:01.760751+00:00 ip-172-31-24-215 CRON[13481]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T10:05:01.766262+00:00 ip-172-31-24-215 CRON[13481]: pam_unix(cron:session): session closed for user root
+2026-04-16T10:15:01.771930+00:00 ip-172-31-24-215 CRON[13490]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T10:15:01.775959+00:00 ip-172-31-24-215 CRON[13490]: pam_unix(cron:session): session closed for user root
+2026-04-16T10:17:01.783701+00:00 ip-172-31-24-215 CRON[13510]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T10:17:01.796999+00:00 ip-172-31-24-215 CRON[13510]: pam_unix(cron:session): session closed for user root
+2026-04-16T10:25:01.805759+00:00 ip-172-31-24-215 CRON[13520]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T10:25:01.815748+00:00 ip-172-31-24-215 CRON[13520]: pam_unix(cron:session): session closed for user root
+2026-04-16T10:35:01.821294+00:00 ip-172-31-24-215 CRON[13530]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T10:35:01.825629+00:00 ip-172-31-24-215 CRON[13530]: pam_unix(cron:session): session closed for user root
+2026-04-16T10:45:01.859089+00:00 ip-172-31-24-215 CRON[13541]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T10:45:01.883208+00:00 ip-172-31-24-215 CRON[13541]: pam_unix(cron:session): session closed for user root
+2026-04-16T10:55:01.891409+00:00 ip-172-31-24-215 CRON[13549]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T10:55:01.901389+00:00 ip-172-31-24-215 CRON[13549]: pam_unix(cron:session): session closed for user root
+2026-04-16T11:05:01.909244+00:00 ip-172-31-24-215 CRON[13559]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T11:05:01.914216+00:00 ip-172-31-24-215 CRON[13559]: pam_unix(cron:session): session closed for user root
+2026-04-16T11:15:01.919646+00:00 ip-172-31-24-215 CRON[13567]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T11:15:01.924852+00:00 ip-172-31-24-215 CRON[13567]: pam_unix(cron:session): session closed for user root
+2026-04-16T11:17:01.928683+00:00 ip-172-31-24-215 CRON[13572]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T11:17:01.932277+00:00 ip-172-31-24-215 CRON[13572]: pam_unix(cron:session): session closed for user root
+2026-04-16T11:25:01.943214+00:00 ip-172-31-24-215 CRON[13579]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T11:25:01.964333+00:00 ip-172-31-24-215 CRON[13579]: pam_unix(cron:session): session closed for user root
+2026-04-16T11:35:01.991447+00:00 ip-172-31-24-215 CRON[13607]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-16T11:35:02.040187+00:00 ip-172-31-24-215 CRON[13607]: pam_unix(cron:session): session closed for user root
+2026-04-16T11:41:48.068308+00:00 ip-172-31-24-215 sshd[13617]: Accepted publickey for ubuntu from 157.49.7.82 port 44878 ssh2: RSA SHA256:d3g8ECO+Qnmk2bsXCVFaUELSInNh7MmrzD7xlm6FPBI
+2026-04-16T11:41:48.070212+00:00 ip-172-31-24-215 sshd[13617]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-04-16T11:41:48.096632+00:00 ip-172-31-24-215 systemd-logind[539]: New session 21 of user ubuntu.
+2026-04-16T11:41:48.123382+00:00 ip-172-31-24-215 (systemd): pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-04-16T11:41:52.043464+00:00 ip-172-31-24-215 sshd[13733]: Received disconnect from 157.49.7.82 port 44878:11: disconnected by user
+2026-04-16T11:41:52.043713+00:00 ip-172-31-24-215 sshd[13733]: Disconnected from user ubuntu 157.49.7.82 port 44878
+2026-04-16T11:41:52.044272+00:00 ip-172-31-24-215 sshd[13617]: pam_unix(sshd:session): session closed for user ubuntu
+2026-04-16T11:41:52.047860+00:00 ip-172-31-24-215 systemd-logind[539]: Session 21 logged out. Waiting for processes to exit.
+2026-04-16T11:41:52.048652+00:00 ip-172-31-24-215 systemd-logind[539]: Removed session 21.
+2026-04-16T11:42:02.403463+00:00 ip-172-31-24-215 (sd-pam): pam_unix(systemd-user:session): session closed for user ubuntu
+2026-04-16T11:42:51.896042+00:00 ip-172-31-24-215 sshd[13777]: Accepted publickey for ubuntu from 157.49.7.82 port 44790 ssh2: RSA SHA256:d3g8ECO+Qnmk2bsXCVFaUELSInNh7MmrzD7xlm6FPBI
+2026-04-16T11:42:51.897951+00:00 ip-172-31-24-215 sshd[13777]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-04-16T11:42:51.920008+00:00 ip-172-31-24-215 systemd-logind[539]: New session 23 of user ubuntu.
+2026-04-16T11:42:51.939388+00:00 ip-172-31-24-215 (systemd): pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
