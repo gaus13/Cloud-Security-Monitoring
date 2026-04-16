@@ -1,15 +1,40 @@
+version: '3'
+services:
 
-# Phase 2 — ELK Stack Setup
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - "9200:9200"
+    networks:
+      - elk
 
-## What this phase does
-Sets up a lightweight SIEM using Elasticsearch + Kibana via Docker
-to collect and visualize security logs from AWS EC2.
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.12.0
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - elk
 
-## How to run
-```bash
-docker compose up -d
-```
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.12.0
+    container_name: filebeat
+    user: root
+    volumes:
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - ./auth.log:/usr/share/filebeat/logs/auth.log:ro
+    depends_on:
+      - elasticsearch
+    networks:
+      - elk
 
-## Ports
-- Elasticsearch: http://localhost:9200
-- Kibana: http://localhost:5601
+networks:
+  elk:
+    driver: bridge
