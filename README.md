@@ -14,11 +14,11 @@ using AWS, ELK Stack, Python, and AI-powered analysis.
 | Phase | Description | Status |
 |-------|-------------|--------|
 | Phase 1 | AWS Setup (EC2 + CloudTrail) | ✅ Complete |
-| Phase 2 | ELK Stack SIEM Setup | 🔄 In Progress |
-| Phase 3 | Threat Detection (Python) | ⏳ Upcoming |
-| Phase 4 | AI Alert Analysis (Claude API) | ⏳ Upcoming |
-| Phase 5 | Automation with n8n | ⏳ Upcoming |
-| Phase 6 | Slack Notifications | ⏳ Upcoming |
+| Phase 2 | ELK Stack SIEM Setup | ✅ Complete  |
+| Phase 3 | Threat Detection (Python) | ✅ Complete  |
+| Phase 4 | AI Alert Analysis (Claude API) | ✅ Complete  |
+| Phase 5 | Automation with n8n | ✅ Complete |
+| Phase 6 | Slack Notifications | ✅ Complete |
 
 ---
 
@@ -36,8 +36,8 @@ using AWS, ELK Stack, Python, and AI-powered analysis.
 
 ## 📸 Screenshots
 
-*(Added phase by phase)*
-
+### 🔹 Slack Alert
+![Slack](screenshots/slack-alert.png)
 ---
 
 ## 🚀 How to Run This Project

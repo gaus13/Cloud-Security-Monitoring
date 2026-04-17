@@ -1,0 +1,122 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "security-alert",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "1417768a-f8da-4b7b-9de9-e4fac2712851",
+      "name": "Webhook",
+      "webhookId": "53a9ee1a-8cbb-42ca-a64d-09937ee52a0e"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ccb2f79f-f4d8-44ab-9879-f77160c4e48d",
+              "name": "ip",
+              "value": "={{$json.body.ip}}",
+              "type": "string"
+            },
+            {
+              "id": "e7736b45-f85e-4f1a-9a32-d9246595718a",
+              "name": "type",
+              "value": "={{$json.body.type}}",
+              "type": "string"
+            },
+            {
+              "id": "47a339d6-1b2c-4ecc-bd5e-23273cd53481",
+              "name": "severity",
+              "value": "={{$json.body.severity}}",
+              "type": "string"
+            },
+            {
+              "id": "77516b05-f5e1-4246-beb9-7c161a1367b1",
+              "name": "details",
+              "value": "={{$json.body.details}}",
+              "type": "string"
+            },
+            {
+              "id": "79481371-1bf0-449f-b473-c56a20aea9b8",
+              "name": "ai_analysis",
+              "value": "={{$json.body.ai_analysis}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "dbabbbf8-910c-49c3-8670-9f5b3ccee1b7",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://hooks.slack.com/services/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",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"text\": \"🚨 *SECURITY ALERT* 🚨\\n\\n• *IP:* {{$json.ip}}\\n• *Attack:* {{$json.type}}\\n• *Severity:* {{$json.severity}}\\n\\n*Details:*\\n{{$json.details}}\\n\\n*AI Analysis:*\\n{{$json.ai_analysis}}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        416,
+        0
+      ],
+      "id": "a959fd21-f32b-4972-aa4e-607129e16f83",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "2ad46efe-f502-4a2d-bd65-8c9b7209de8d",
+  "meta": {
+    "instanceId": "dc5837daed9a5e99044d1a1b7765cc2a167e67b3401a95f8eca3e89f91d67dfd"
+  },
+  "id": "RH8XnrR7MJ9sU5Vk",
+  "tags": []
+}
