@@ -2,12 +2,34 @@
 
 # 🔐 Cloud Security Monitoring + AI Alert System
 
-A real-world cloud security project built to simulate and detect threats
-using AWS, ELK Stack, Python, and AI-powered analysis.
+A real-world cloud security monitoring system that automatically detects threats,
+analyzes them using AI, and sends instant alerts via Slack — built to simulate
+how modern SOC teams operate. 
 
 ---
+## 🏗️ Architecture
 
-## 🧠 What This Project Does
+┌─────────────────────────────────────────────────────┐
+│                                                     │
+│  AWS EC2 (Ubuntu)                                   │
+│  └── Generates auth.log (SSH attempts)              │
+│                                                     │
+│  ELK Stack (Docker)                                 │
+│  ├── Filebeat  → ships logs                         │
+│  ├── Elasticsearch → stores + indexes logs          │
+│  └── Kibana → visualizes attack patterns            │
+│                                                     │
+│  Python Detector                                    │
+│  └── Detects brute force, invalid users, root login │
+│                                                     │
+│  AI Analyzer (Groq - Mistral)                       │
+│  └── Explains threats with severity + actions       │
+│                                                     │
+│  n8n Automation                                     │
+│  └── Sends Slack alert automatically                │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+
 
 ## 📌 Phases
 
@@ -36,16 +58,72 @@ using AWS, ELK Stack, Python, and AI-powered analysis.
 
 ## 📸 Screenshots
 
-### 🔹 Slack Alert
-![Slack](screenshots/slack-alert.png)
+### Kibana SIEM Dashboard
+![Kibana Dashboard](screenshots/phase2-kibana-dashboard.png)
+
+### AI Alert Analysis
+![AI Analysis](screenshots/phase4-ai-analysis.png)
+
+### Slack Alert Received
+![Slack Alert](screenshots/slack-alert.png)
+
+### n8n Automation Workflow
+![n8n Workflow](screenshots/n8n-workflow.png)
+
 ---
 
 ## 🚀 How to Run This Project
 
-*(Instructions added phase by phase)*
 
+### Prerequisites
+- AWS Account (free tier)
+- Docker Desktop
+- Python 3.x
+- Groq API key (free)
+- Slack workspace
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/gaus13/Cloud-Security-Monitoring.git
+cd Cloud-Security-Monitoring
+```
+
+### 2. Setup virtual environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install requests python-dotenv colorama python-dateutil
+```
+
+### 3. Create .env file
+```bash
+cp .env.example .env
+# Add your API keys to .env
+```
+
+### 4. Start ELK Stack
+```bash
+cd phase2-elk-stack
+docker compose up -d
+```
+
+### 5. Run threat detection
+```bash
+python3 phase3-detection/detector.py
+```
+
+### 6. Run AI analyzer
+```bash
+python3 phase4-ai-analysis/ai_analyzer.py
+```
+
+### 7. Start n8n automation
+```bash
+docker run -d --name n8n -p 5678:5678 n8nio/n8n
+# Import workflow from phase5-automation/n8n-workflow.json
+```
 ---
 
 ## 👤 Author
+Gulam Gaus
 
-** Gulam Gaus **
