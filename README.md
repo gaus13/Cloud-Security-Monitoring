@@ -9,27 +9,32 @@ how modern SOC teams operate.
 ---
 ## 🏗️ Architecture
 
-┌─────────────────────────────────────────────────────┐
-│                                                     │
-│  AWS EC2 (Ubuntu)                                   │
-│  └── Generates auth.log (SSH attempts)              │
-│                                                     │
-│  ELK Stack (Docker)                                 │
-│  ├── Filebeat  → ships logs                         │
-│  ├── Elasticsearch → stores + indexes logs          │
-│  └── Kibana → visualizes attack patterns            │
-│                                                     │
-│  Python Detector                                    │
-│  └── Detects brute force, invalid users, root login │
-│                                                     │
-│  AI Analyzer (Groq - Mistral)                       │
-│  └── Explains threats with severity + actions       │
-│                                                     │
-│  n8n Automation                                     │
-│  └── Sends Slack alert automatically                │
-│                                                     │
-└─────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A[🖥️ AWS EC2 Ubuntu Server] -->|Generates SSH logs| B[📄 auth.log]
+    B -->|Shipped by Filebeat| C[🔍 Elasticsearch]
+    C -->|Visualized by| D[📊 Kibana SIEM Dashboard]
+    C -->|Read by| E[🐍 Python Threat Detector]
+    
+    E -->|Brute Force Detected| F{🚨 Threat Found?}
+    E -->|Invalid User Detected| F
+    E -->|Root Login Detected| F
+    
+    F -->|YES| G[🤖 AI Analyzer - Groq Mistral]
+    F -->|NO| H[✅ No Action Needed]
+    
+    G -->|Alert + Explanation| I[⚡ n8n Automation Workflow]
+    I -->|Instant Notification| J[💬 Slack Alert]
 
+    style A fill:#FF9900,color:#000
+    style C fill:#005571,color:#fff
+    style D fill:#005571,color:#fff
+    style E fill:#3776AB,color:#fff
+    style G fill:#7C3AED,color:#fff
+    style I fill:#EA4B71,color:#fff
+    style J fill:#4A154B,color:#fff
+    style F fill:#DC2626,color:#fff
+```
 
 ## 📌 Phases
 
