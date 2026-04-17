@@ -2,14 +2,20 @@
 """
 Phase 5 - n8n Compatible Detector
 Outputs JSON so n8n can read and process results
+
 """
+import os
 import requests
 import re
 import json
 import sys
 from collections import defaultdict
+from dotenv import load_dotenv
 
-WEBHOOK_URL = "http://localhost:5678/webhook-test/security-alert"
+load_dotenv()
+
+WEBHOOK_URL = os.getenv("N8N_WEBHOOK_URL")
+
 
 LOG_FILE = "../auth.log"
 THRESHOLD = 5

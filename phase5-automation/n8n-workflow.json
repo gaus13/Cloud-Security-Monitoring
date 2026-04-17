@@ -67,7 +67,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://hooks.slack.com/services/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",
+        "url": "YOUR_SLACK_WEBHOOK_URL",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={\n  \"text\": \"🚨 *SECURITY ALERT* 🚨\\n\\n• *IP:* {{$json.ip}}\\n• *Attack:* {{$json.type}}\\n• *Severity:* {{$json.severity}}\\n\\n*Details:*\\n{{$json.details}}\\n\\n*AI Analysis:*\\n{{$json.ai_analysis}}\"\n}",
