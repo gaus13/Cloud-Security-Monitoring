@@ -167,7 +167,7 @@ After setup we could see:
 ## 📸 Screenshots
 
 ### Kibana Discover — Brute Force Attacks Visible
-![Kibana Dashboard](../screenshots/phase2-kibana-dashboard.png)
+![Kibana Dashboard](../screenshots/kibana-discover.png)
 
 ---
 
