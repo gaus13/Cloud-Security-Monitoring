@@ -155,7 +155,3 @@ python3 phase3-detection/detector.py
 - Color-coded terminal output for quick threat triage
 
 ---
-
-## 📸 Screenshot
-
-![Threat Detection Output](../phase3-detection-one.png)
