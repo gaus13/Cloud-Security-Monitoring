@@ -71,20 +71,6 @@ flowchart TD
 <img src="screenshots/slack-alert.png" width="700"/>
 ---
 
-## 📸 Screenshots
-
-### Kibana SIEM Dashboard
-![Kibana Dashboard](screenshots/phase2-kibana-dashboard.png)
-
-### AI Alert Analysis
-![AI Analysis](screenshots/phase4-ai-analysis.png)
-
-### Slack Alert Received
-![Slack Alert](screenshots/slack-alert.png)
-
-### n8n Automation Workflow
-![n8n Workflow](screenshots/n8n-workflow.png)
-
 ---
 
 ## 🚀 How to Run This Project
