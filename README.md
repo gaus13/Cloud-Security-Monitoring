@@ -58,7 +58,17 @@ flowchart TD
 - **n8n** — Workflow automation
 - **Slack** — Real-time alerting
 - **Docker** — Container orchestration
+## 📸 Screenshots
 
+### 🔍 Kibana Logs
+<img src="screenshots/kibana-discover.png" width="700"/>
+
+### 🚨 Detection Alerts
+<img src="screenshots/phase3-detection-one.png" width="700"/>
+<img src="screenshots/phase3-detection-two.png" width="700"/>
+
+### 📩 Slack Alert Integration
+<img src="screenshots/slack-alert.png" width="700"/>
 ---
 
 ## 📸 Screenshots
