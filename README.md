@@ -67,6 +67,9 @@ flowchart TD
 <img src="screenshots/phase3-detection-one.png" width="700"/>
 <img src="screenshots/phase3-detection-two.png" width="700"/>
 
+## 🔄 n8n Workflow
+<img src="screenshots/automation-workflow.png" width="800"/>
+
 ### 📩 Slack Alert Integration
 <img src="screenshots/slack-alert.png" width="700"/>
 ---
