@@ -6,7 +6,6 @@ A real-world cloud security monitoring system that automatically detects threats
 analyzes them using AI, and sends instant alerts via Slack — built to simulate
 how modern SOC teams operate. 
 
----
 ## 🏗️ Architecture
 
 ```mermaid
@@ -15,17 +14,16 @@ flowchart TD
     B -->|Shipped by Filebeat| C[🔍 Elasticsearch]
     C -->|Visualized by| D[📊 Kibana SIEM Dashboard]
     C -->|Read by| E[🐍 Python Threat Detector]
-    
+    E -->|Exposes metrics| P[📈 Prometheus :8000]
+    P -->|Scraped every 15s| Q[📊 Grafana Dashboard]
+    Q -->|Threshold alert| R[🔔 Grafana Slack Alert]
     E -->|Brute Force Detected| F{🚨 Threat Found?}
     E -->|Invalid User Detected| F
     E -->|Root Login Detected| F
-    
-    F -->|YES| G[🤖 AI Analyzer - Groq Mistral]
+    F -->|YES| G[🤖 AI Analyzer - Groq]
     F -->|NO| H[✅ No Action Needed]
-    
     G -->|Alert + Explanation| I[⚡ n8n Automation Workflow]
     I -->|Instant Notification| J[💬 Slack Alert]
-
     style A fill:#FF9900,color:#000
     style C fill:#005571,color:#fff
     style D fill:#005571,color:#fff
@@ -34,7 +32,11 @@ flowchart TD
     style I fill:#EA4B71,color:#fff
     style J fill:#4A154B,color:#fff
     style F fill:#DC2626,color:#fff
+    style P fill:#E6522C,color:#fff
+    style Q fill:#F46800,color:#fff
+    style R fill:#4A154B,color:#fff
 ```
+
 
 ## 📌 Phases
 
@@ -46,18 +48,24 @@ flowchart TD
 | Phase 4 | AI Alert Analysis (Claude API) | ✅ Complete  |
 | Phase 5 | Automation with n8n | ✅ Complete |
 | Phase 6 | Slack Notifications | ✅ Complete |
-
+| Phase 7 | Prometheus + Grafana Metrics Dashboard | ✅ Complete |
 ---
 
 ## 🛠️ Tech Stack
 
-- **AWS** — EC2, CloudTrail, S3, IAM
-- **ELK Stack** — Elasticsearch, Kibana, Filebeat
-- **Python** — Threat detection logic
-- **Claude API** — AI-powered alert explanation
-- **n8n** — Workflow automation
-- **Slack** — Real-time alerting
-- **Docker** — Container orchestration
+| Tool | Purpose |
+|------|---------|
+| **AWS EC2 + CloudTrail** | Cloud server + audit logging |
+| **Elasticsearch + Kibana** | SIEM — log storage and visualization |
+| **Filebeat** | Log shipping agent |
+| **Python** | Threat detection engine |
+| **Groq API (Mistral)** | AI-powered alert analysis |
+| **n8n** | Workflow automation |
+| **Prometheus** | Metrics collection |
+| **Grafana** | Real-time metrics dashboard + alerting |
+| **Slack** | Real-time notifications |
+| **Docker Compose** | Container orchestration |
+
 ## 📸 Screenshots
 
 ### 🔍 Kibana Logs
@@ -72,6 +80,12 @@ flowchart TD
 
 ### 📩 Slack Alert Integration
 <img src="screenshots/slack-alert.png" width="700"/>
+
+### 📈 Grafana Security Dashboard
+<img src="screenshots/grafana_dashboard.png" width="700"/>
+
+### 💬 Grafana Slack Alert
+<img src="screenshots/grafana_slack_alert.png" width="700"/>
 ---
 
 ---
