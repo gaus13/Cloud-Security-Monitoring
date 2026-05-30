@@ -41,9 +41,10 @@ Logs → Detection → AI Analysis → n8n Webhook → Slack Alerts
 
 ---
 
-## 📸 Screenshots
+## 🔄 n8n Workflow
 
-(Add screenshots here)
+<img src="screenshots/automation-workflow.png" width="800"/>
+
 
 ---
 
